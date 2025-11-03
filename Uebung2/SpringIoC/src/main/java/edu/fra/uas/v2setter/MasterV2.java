@@ -11,4 +11,9 @@ public class MasterV2 {
     public void delegateWork() {
         journeyman.performWork();
     }
+    public static void main(String[] args) {
+        MasterV2 master = new MasterV2();
+        master.setJourneymanAndWork(new Journeyman(), new Drilling());
+        master.delegateWork();
+    }
 }
